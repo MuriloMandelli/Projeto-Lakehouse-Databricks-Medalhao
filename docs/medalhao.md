@@ -10,12 +10,7 @@ melhoram a **estrutura e a qualidade** dos dados progressivamente (também chama
 | **Silver** | Delta | Limpeza, padronização, remoção de duplicados, tratamento de nulos (**Data Quality**) | `silver.*` + relatório com 11 regras |
 | **Gold** | Delta | Regras de negócio; modelo otimizado para leitura (**dimensional**/OBT) | Esquema estrela: 3 dimensões + 1 fato |
 
-```mermaid
-flowchart LR
-    L["LANDING<br/>bruto · provisório"] --> B["BRONZE<br/>cópia · histórico · Delta"]
-    B --> S["SILVER<br/>limpo · padronizado · Delta"]
-    S --> G["GOLD<br/>negócio · dimensional · Delta"]
-```
+![Camadas da arquitetura medalhão](assets/camadas_medalhao.svg)
 
 ## Os objetos no Databricks
 

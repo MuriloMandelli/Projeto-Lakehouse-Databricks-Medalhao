@@ -13,11 +13,7 @@ Trabalho 3 da disciplina de **Engenharia de Dados** (Engenharia de Software — 
 Pipeline de dados da **Loja Virtual** no **Databricks Free Edition** (PaaS) com a **arquitetura
 medalhão**, encadeado por uma **Job**:
 
-```
-SQL Server (LojaDB) ─▶ LANDING (CSV) ─▶ BRONZE (Delta) ─▶ SILVER (Data Quality) ─▶ GOLD (Kimball)
-   [local: 00, 01]      [volume]          [002]              [003]                   [004]
-                                    └───────────── Job no Databricks: 001 → 002 → 003 → 004 ─────────────┘
-```
+![Pipeline da Loja Virtual na arquitetura medalhão](assets/pipeline_medalhao.svg)
 
 📘 **Documentação (MkDocs):** https://murilomandelli.github.io/Projeto-Lakehouse-Databricks-Medalhao/
 
@@ -32,6 +28,7 @@ SQL Server (LojaDB) ─▶ LANDING (CSV) ─▶ BRONZE (Delta) ─▶ SILVER (Da
 - [Parte 1 — no computador (extração)](#parte-1--no-computador-extração)
 - [Parte 2 — no Databricks (medalhão + Job)](#parte-2--no-databricks-medalhão--job)
 - [Notebooks](#notebooks)
+- [Execução no Databricks (evidência)](#execução-no-databricks-evidência)
 - [Estrutura do projeto](#estrutura-do-projeto)
 - [Testes](#testes)
 - [Documentação (MkDocs)](#documentação-mkdocs)
@@ -152,6 +149,22 @@ Clique em **Run now**. Em **Runs** aparece o grafo das 4 tarefas, executadas em 
 | Databricks | `004_gold` | Modelo dimensional: `dim_cliente`, `dim_produto`, `dim_tempo`, `fato_vendas` |
 | Databricks | `005_destruir_ambiente` | Apaga todos os schemas (fora da Job, uso manual) |
 
+![Arquitetura medalhão: landing, bronze, silver e gold](assets/camadas_medalhao.svg)
+
+A camada **gold** é um esquema estrela (Ralph Kimball):
+
+![Esquema estrela da camada gold](assets/modelo_estrela_gold.svg)
+
+## Execução no Databricks (evidência)
+
+Job **`lakehouse_loja_medalhao`** com as 4 tarefas encadeadas, todas em compute **Serverless**:
+
+![Tarefas da Job no Databricks](assets/job_tarefas.png)
+
+Execução concluída com sucesso (**Succeeded**, 3 min 42 s), com as 4 tarefas em verde:
+
+![Execução da Job com sucesso](assets/job_execucao_sucesso.png)
+
 ## Estrutura do projeto
 
 ```text
@@ -161,7 +174,7 @@ Projeto-Lakehouse-Databricks-Medalhao/
 ├── .env.example                 ← modelo das variáveis (SQL Server + Databricks)
 ├── pyproject.toml / uv.lock     ← dependências e atalhos (taskipy)
 ├── mkdocs.yml + docs/           ← site de documentação
-├── assets/                      ← diagramas (ER da origem e estrela da gold)
+├── assets/                      ← diagramas (pipeline, camadas, ER, estrela) e prints da Job
 ├── data/origem/*.csv            ← dados que populam o SQL Server (com problemas de qualidade)
 ├── data/landing/*.csv           ← CSV extraídos do SQL Server (os que vão para o Databricks)
 ├── jobs/job_lakehouse_loja.json ← definição da Job

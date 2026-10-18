@@ -27,18 +27,7 @@ pedido e item_pedido).
 
 ## O pipeline
 
-```mermaid
-flowchart LR
-    subgraph PC["Computador (WSL)"]
-        DB[("SQL Server<br/>LojaDB")] -->|01 · extração| CSV["data/landing/*.csv"]
-    end
-    CSV -->|upload SDK / UI| LAND
-    subgraph DBX["Databricks Free Edition — catálogo workspace"]
-        LAND[["landing.dados<br/>(volume, CSV)"]] -->|002| BR[("bronze<br/>Delta")]
-        BR -->|003 Data Quality| SI[("silver<br/>Delta")]
-        SI -->|004 Kimball| GO[("gold<br/>estrela")]
-    end
-```
+![Pipeline da Loja Virtual na arquitetura medalhão](assets/pipeline_medalhao.svg)
 
 | Etapa do enunciado | Onde está |
 |---|---|

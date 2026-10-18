@@ -3,10 +3,7 @@
 O enunciado pede que todas as execuções estejam encadeadas por uma **Job** (*Jobs & Pipelines*), com
 cada etapa executada **em sequência**.
 
-```mermaid
-flowchart LR
-    T1["t1_preparar_ambiente<br/>001"] --> T2["t2_bronze<br/>002"] --> T3["t3_silver<br/>003"] --> T4["t4_gold<br/>004"]
-```
+![Tarefas da Job no Databricks](assets/job_tarefas.png)
 
 | Tarefa | Notebook | Depende de | O que garante |
 |---|---|---|---|
@@ -17,6 +14,13 @@ flowchart LR
 
 Se uma tarefa falhar, as seguintes **não executam** — a gold nunca é montada com dados
 incompletos.
+
+## Execução
+
+A Job foi executada no Databricks Free Edition e terminou com **Succeeded** em **3 min 42 s**,
+com as 4 tarefas em verde:
+
+![Execução da Job concluída com sucesso](assets/job_execucao_sucesso.png)
 
 ## Como criar no Databricks
 
