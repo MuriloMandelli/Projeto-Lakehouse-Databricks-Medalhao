@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 302" width="1150" height="302" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">
+<rect width="1150" height="302" fill="#ffffff"/>
+<text x="575.0" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#1f2937">Modelo ER — Loja Virtual (banco LojaDB)</text>
+<g fill="none" stroke="#475569" stroke-width="1.6">
+<path d="M210 86.0 H230.0 V110.0 H250"/>
+<path d="M440 86.0 H460.0 V134.0 H480"/>
+<path d="M670 110.0 H690.0 V86.0 H710"/>
+<path d="M900 110.0 H920.0 V86.0 H940"/>
+</g>
+<g font-size="12" font-weight="700" fill="#b45309"><text x="214" y="81.0">1</text><text x="238" y="105.0">N</text><text x="444" y="81.0">1</text><text x="468" y="129.0">N</text><text x="674" y="105.0">N</text><text x="698" y="81.0">1</text><text x="904" y="105.0">N</text><text x="928" y="81.0">1</text></g>
+<g transform="translate(20,40)">
+<rect width="190" height="116" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/>
+<path d="M0 6 a6 6 0 0 1 6 -6 h178 a6 6 0 0 1 6 6 v28 h-190 z" fill="#065f46"/>
+<text x="95.0" y="22" text-anchor="middle" fill="#fff" font-weight="700">categoria</text>
+<text x="10" y="50" font-weight="700">PK id_categoria</text>
+<text x="180" y="50" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="74">nome</text>
+<text x="180" y="74" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(50)</text>
+<text x="10" y="98">descricao</text>
+<text x="180" y="98" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(200)</text>
+</g>
+<g transform="translate(250,40)">
+<rect width="190" height="188" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/>
+<path d="M0 6 a6 6 0 0 1 6 -6 h178 a6 6 0 0 1 6 6 v28 h-190 z" fill="#065f46"/>
+<text x="95.0" y="22" text-anchor="middle" fill="#fff" font-weight="700">produto</text>
+<text x="10" y="50" font-weight="700">PK id_produto</text>
+<text x="180" y="50" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="74" fill="#b45309">FK id_categoria</text>
+<text x="180" y="74" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="98">nome</text>
+<text x="180" y="98" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(120)</text>
+<text x="10" y="122">preco</text>
+<text x="180" y="122" text-anchor="end" fill="#64748b" font-size="11">DECIMAL(10,2)</text>
+<text x="10" y="146">estoque</text>
+<text x="180" y="146" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="170">ativo</text>
+<text x="180" y="170" text-anchor="end" fill="#64748b" font-size="11">BIT</text>
+</g>
+<g transform="translate(480,40)">
+<rect width="190" height="164" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/>
+<path d="M0 6 a6 6 0 0 1 6 -6 h178 a6 6 0 0 1 6 6 v28 h-190 z" fill="#065f46"/>
+<text x="95.0" y="22" text-anchor="middle" fill="#fff" font-weight="700">item_pedido</text>
+<text x="10" y="50" font-weight="700">PK id_item</text>
+<text x="180" y="50" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="74" fill="#b45309">FK id_pedido</text>
+<text x="180" y="74" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="98" fill="#b45309">FK id_produto</text>
+<text x="180" y="98" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="122">quantidade</text>
+<text x="180" y="122" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="146">preco_unitario</text>
+<text x="180" y="146" text-anchor="end" fill="#64748b" font-size="11">DECIMAL(10,2)</text>
+</g>
+<g transform="translate(710,40)">
+<rect width="190" height="164" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/>
+<path d="M0 6 a6 6 0 0 1 6 -6 h178 a6 6 0 0 1 6 6 v28 h-190 z" fill="#065f46"/>
+<text x="95.0" y="22" text-anchor="middle" fill="#fff" font-weight="700">pedido</text>
+<text x="10" y="50" font-weight="700">PK id_pedido</text>
+<text x="180" y="50" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="74" fill="#b45309">FK id_cliente</text>
+<text x="180" y="74" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="98">dt_pedido</text>
+<text x="180" y="98" text-anchor="end" fill="#64748b" font-size="11">DATETIME2</text>
+<text x="10" y="122">status</text>
+<text x="180" y="122" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(20)</text>
+<text x="10" y="146">valor_total</text>
+<text x="180" y="146" text-anchor="end" fill="#64748b" font-size="11">DECIMAL(12,2)</text>
+</g>
+<g transform="translate(940,40)">
+<rect width="190" height="212" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/>
+<path d="M0 6 a6 6 0 0 1 6 -6 h178 a6 6 0 0 1 6 6 v28 h-190 z" fill="#065f46"/>
+<text x="95.0" y="22" text-anchor="middle" fill="#fff" font-weight="700">cliente</text>
+<text x="10" y="50" font-weight="700">PK id_cliente</text>
+<text x="180" y="50" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="74">nome</text>
+<text x="180" y="74" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(100)</text>
+<text x="10" y="98">email</text>
+<text x="180" y="98" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(120)</text>
+<text x="10" y="122">cpf</text>
+<text x="180" y="122" text-anchor="end" fill="#64748b" font-size="11">CHAR(11)</text>
+<text x="10" y="146">cidade</text>
+<text x="180" y="146" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(80)</text>
+<text x="10" y="170">uf</text>
+<text x="180" y="170" text-anchor="end" fill="#64748b" font-size="11">CHAR(2)</text>
+<text x="10" y="194">dt_cadastro</text>
+<text x="180" y="194" text-anchor="end" fill="#64748b" font-size="11">DATE</text>
+</g>
+<text x="20" y="286" font-size="12" fill="#475569">Uma categoria tem N produtos · um cliente faz N pedidos · um pedido tem N itens · cada item aponta para 1 produto.</text>
+</svg>
