@@ -1,0 +1,201 @@
+id_produto,id_categoria,nome,preco,estoque,ativo
+1,1,Smartphone Lite,1108.59,257,True
+2,1,Fone Bluetooth Lite,154.42,487,True
+3,1,Smartwatch Lite,566.79,307,True
+4,1,Caixa de Som Lite,-246.03,-18,True
+5,1,Carregador Turbo Lite,83.69,393,True
+6,1,Smartphone Plus,1645.20,225,True
+7,1,Fone Bluetooth Plus,199.45,56,True
+8,1,Smartwatch Plus,717.30,5,True
+9,1,Caixa de Som Plus,337.04,347,True
+10,1,Carregador Turbo Plus,101.86,178,True
+11,1,Smartphone Pro,2215.16,-7,True
+12,1,Fone Bluetooth Pro,267.54,326,True
+13,1,Smartwatch Pro,987.44,285,True
+14,1,Caixa de Som Pro,406.95,72,True
+15,1,Carregador Turbo Pro,141.55,295,True
+16,1,Smartphone Max,2823.64,188,True
+17,1,Fone Bluetooth Max,324.87,204,True
+18,1,Smartwatch Max,1334.37,444,True
+19,1,Caixa de Som Max,550.70,384,True
+20,1,Carregador Turbo Max,189.22,203,True
+21,1,Smartphone Ultra,3197.81,215,True
+22,1,Fone Bluetooth Ultra,460.51,262,True
+23,1,Smartwatch Ultra,-1520.53,114,True
+24,1,Caixa de Som Ultra,744.54,492,True
+25,1,Carregador Turbo Ultra,241.33,52,True
+26,2,Notebook Lite,3154.82,72,True
+27,2,Mouse Sem Fio Lite,-66.20,453,True
+28,2,Teclado Mecânico Lite,260.04,345,True
+29,2,Monitor 24 pol Lite,868.71,279,True
+30,2,SSD 1TB Lite,392.17,157,True
+31,2,Notebook Plus,4282.19,357,True
+32,2,Mouse Sem Fio Plus,98.00,221,True
+33,2,Teclado Mecânico Plus,346.57,4,False
+34,2,Monitor 24 pol Plus,1072.37,305,True
+35,2,SSD 1TB Plus,551.57,474,True
+36,2,Notebook Pro,5898.60,-9,True
+37,2,Mouse Sem Fio Pro,118.21,392,True
+38,2,Teclado Mecânico Pro,451.18,285,True
+39,2,Monitor 24 pol Pro,1233.14,148,True
+40,2,SSD 1TB Pro,736.69,50,True
+41,2,Notebook Max,7344.86,492,True
+42,2,Mouse Sem Fio Max,152.55,494,True
+43,2,Teclado Mecânico Max,541.84,372,True
+44,2,Monitor 24 pol Max,1606.63,136,True
+45,2,SSD 1TB Max,857.14,99,True
+46,2,Notebook Ultra,8801.07,230,True
+47,2,Mouse Sem Fio Ultra,180.01,231,True
+48,2,Teclado Mecânico Ultra,760.50,42,True
+49,2,Monitor 24 pol Ultra,2105.06,61,True
+50,2,SSD 1TB Ultra,1176.42,489,True
+51,3,Air Fryer Lite,368.04,182,True
+52,3,Liquidificador Lite,144.40,298,True
+53,3,Cafeteira Lite,217.05,440,True
+54,3,Jogo de Panelas Lite,313.23,69,True
+55,3,Aspirador Lite,447.57,67,True
+56,3,Air Fryer Plus,489.22,258,True
+57,3,Liquidificador Plus,191.79,81,True
+58,3,Cafeteira Plus,-274.74,468,True
+59,3,Jogo de Panelas Plus,390.60,199,True
+60,3,Aspirador Plus,587.34,100,True
+61,3,Air Fryer Pro,649.60,199,True
+62,3,Liquidificador Pro,232.12,177,True
+63,3,Cafeteira Pro,369.55,483,False
+64,3,Jogo de Panelas Pro,511.06,167,True
+65,3,Aspirador Pro,-757.37,467,True
+66,3,Air Fryer Max,839.11,292,True
+67,3,Liquidificador Max,308.27,302,True
+68,3,Cafeteira Max,434.16,172,True
+69,3,Jogo de Panelas Max,624.80,363,True
+70,3,Aspirador Max,970.03,100,True
+71,3,Air Fryer Ultra,915.98,331,True
+72,3,Liquidificador Ultra,448.47,231,True
+73,3,Cafeteira Ultra,575.78,247,True
+74,3,Jogo de Panelas Ultra,903.47,66,True
+75,3,Aspirador Ultra,1189.12,451,True
+76,4,Bicicleta Aro 29 Lite,1418.71,82,True
+77,4,Tênis de Corrida Lite,281.16,139,True
+78,4,Bola de Futebol Lite,88.45,40,True
+79,4,Halteres Lite,112.49,89,True
+80,4,Tapete de Yoga Lite,79.96,399,True
+81,4,Bicicleta Aro 29 Plus,1618.23,90,True
+82,4,Tênis de Corrida Plus,388.60,61,True
+83,4,Bola de Futebol Plus,117.58,140,True
+84,4,Halteres Plus,166.85,118,False
+85,4,Tapete de Yoga Plus,95.54,232,True
+86,4,Bicicleta Aro 29 Pro,2169.34,401,True
+87,4,Tênis de Corrida Pro,545.33,93,True
+88,4,Bola de Futebol Pro,148.47,80,True
+89,4,Halteres Pro,211.64,405,True
+90,4,Tapete de Yoga Pro,125.38,366,True
+91,4,Bicicleta Aro 29 Max,3003.71,374,True
+92,4,Tênis de Corrida Max,632.90,137,True
+93,4,Bola de Futebol Max,183.45,400,True
+94,4,Halteres Max,288.02,87,True
+95,4,Tapete de Yoga Max,160.53,182,True
+96,4,Bicicleta Aro 29 Ultra,3411.04,322,True
+97,4,Tênis de Corrida Ultra,808.68,301,True
+98,4,Bola de Futebol Ultra,241.47,161,True
+99,4,Halteres Ultra,319.61,7,True
+100,4,Tapete de Yoga Ultra,241.83,397,True
+101,5,Camiseta Básica Lite,43.72,29,True
+102,5,Calça Jeans Lite,117.60,62,True
+103,5,Jaqueta Corta-Vento Lite,202.45,479,True
+104,5,Mochila Lite,144.45,-13,True
+105,5,Boné Lite,51.55,314,False
+106,5,Camiseta Básica Plus,-51.00,311,True
+107,5,Calça Jeans Plus,167.74,346,True
+108,5,Jaqueta Corta-Vento Plus,269.70,440,True
+109,5,Mochila Plus,213.50,128,True
+110,5,Boné Plus,70.81,182,True
+111,5,Camiseta Básica Pro,70.93,449,False
+112,5,Calça Jeans Pro,229.63,148,True
+113,5,Jaqueta Corta-Vento Pro,358.30,468,True
+114,5,Mochila Pro,268.66,163,True
+115,5,Boné Pro,76.84,489,True
+116,5,Camiseta Básica Max,89.07,369,True
+117,5,Calça Jeans Max,266.67,62,True
+118,5,Jaqueta Corta-Vento Max,407.06,181,True
+119,5,Mochila Max,361.24,154,False
+120,5,Boné Max,111.72,-19,True
+121,5,Camiseta Básica Ultra,109.25,397,True
+122,5,Calça Jeans Ultra,343.58,64,True
+123,5,Jaqueta Corta-Vento Ultra,507.18,367,True
+124,5,Mochila Ultra,435.44,203,True
+125,5,Boné Ultra,148.02,116,False
+126,6,Livro de Python Lite,85.98,245,True
+127,6,Romance Nacional Lite,49.13,70,True
+128,6,Ficção Científica Lite,56.03,429,True
+129,6,HQ Lite,31.77,443,True
+130,6,Guia de SQL Lite,80.22,135,True
+131,6,Livro de Python Plus,117.48,380,True
+132,6,Romance Nacional Plus,60.35,5,True
+133,6,Ficção Científica Plus,67.82,29,True
+134,6,HQ Plus,47.13,441,True
+135,6,Guia de SQL Plus,109.10,446,True
+136,6,Livro de Python Pro,167.57,486,True
+137,6,Romance Nacional Pro,77.44,141,True
+138,6,Ficção Científica Pro,87.91,183,True
+139,6,HQ Pro,58.99,415,True
+140,6,Guia de SQL Pro,143.85,297,True
+141,6,Livro de Python Max,184.47,210,True
+142,6,Romance Nacional Max,106.80,486,True
+143,6,Ficção Científica Max,132.02,267,True
+144,6,HQ Max,81.55,327,True
+145,6,Guia de SQL Max,168.93,279,True
+146,6,Livro de Python Ultra,233.75,378,True
+147,6,Romance Nacional Ultra,136.17,273,True
+148,6,Ficção Científica Ultra,164.74,298,True
+149,6,HQ Ultra,89.08,201,True
+150,6,Guia de SQL Ultra,244.75,264,True
+151,7,Secador de Cabelo Lite,185.82,494,True
+152,7,Perfume 100ml Lite,229.28,375,True
+153,7,Kit Skincare Lite,121.14,158,False
+154,7,Barbeador Lite,152.78,403,True
+155,7,Protetor Solar Lite,48.59,151,True
+156,7,Secador de Cabelo Plus,227.32,498,True
+157,7,Perfume 100ml Plus,355.95,322,False
+158,7,Kit Skincare Plus,159.31,245,True
+159,7,Barbeador Plus,189.37,395,True
+160,7,Protetor Solar Plus,64.10,275,True
+161,7,Secador de Cabelo Pro,306.99,91,True
+162,7,Perfume 100ml Pro,394.80,14,True
+163,7,Kit Skincare Pro,204.61,451,True
+164,7,Barbeador Pro,268.61,431,True
+165,7,Protetor Solar Pro,74.48,110,True
+166,7,Secador de Cabelo Max,403.88,127,True
+167,7,Perfume 100ml Max,603.35,248,True
+168,7,Kit Skincare Max,281.80,37,True
+169,7,Barbeador Max,337.72,331,True
+170,7,Protetor Solar Max,98.49,255,True
+171,7,Secador de Cabelo Ultra,505.91,-4,True
+172,7,Perfume 100ml Ultra,744.14,469,True
+173,7,Kit Skincare Ultra,307.95,398,True
+174,7,Barbeador Ultra,445.91,398,True
+175,7,Protetor Solar Ultra,132.38,115,True
+176,8,Blocos de Montar Lite,197.30,287,True
+177,8,Quebra-Cabeça Lite,64.89,370,True
+178,8,Boneca Lite,89.88,160,True
+179,8,Carrinho RC Lite,191.03,112,True
+180,8,Jogo de Tabuleiro Lite,130.07,388,True
+181,8,Blocos de Montar Plus,255.30,411,True
+182,8,Quebra-Cabeça Plus,73.52,226,True
+183,8,Boneca Plus,120.67,65,True
+184,8,Carrinho RC Plus,226.00,60,True
+185,8,Jogo de Tabuleiro Plus,166.64,227,True
+186,8,Blocos de Montar Pro,343.07,137,True
+187,8,Quebra-Cabeça Pro,111.63,287,True
+188,8,Boneca Pro,145.90,294,True
+189,8,Carrinho RC Pro,299.96,11,True
+190,8,Jogo de Tabuleiro Pro,197.03,209,True
+191,8,Blocos de Montar Max,455.77,472,True
+192,8,Quebra-Cabeça Max,136.70,-19,True
+193,8,Boneca Max,204.64,279,True
+194,8,Carrinho RC Max,390.02,331,True
+195,8,Jogo de Tabuleiro Max,286.33,-10,True
+196,8,Blocos de Montar Ultra,533.91,359,True
+197,8,Quebra-Cabeça Ultra,162.42,329,True
+198,8,Boneca Ultra,268.78,410,True
+199,8,Carrinho RC Ultra,543.23,173,False
+200,8,Jogo de Tabuleiro Ultra,353.29,325,True

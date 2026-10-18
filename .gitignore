@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+.ruff_cache/
+
+# Ambiente virtual
+.venv
+
+# Variáveis de ambiente (contém o token do Databricks — NUNCA versionar)
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Spark local (simulação)
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Site gerado pelo MkDocs (publicado na branch gh-pages)
+site/
+
+# Editores / SO
+.vscode/
+.idea/
+.DS_Store

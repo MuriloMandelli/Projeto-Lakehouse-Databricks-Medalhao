@@ -1,0 +1,59 @@
+[project]
+name = "lakehouse-databricks"
+version = "0.1.0"
+description = "Trabalho 3 de Engenharia de Dados (SATC): Lakehouse com Databricks Free Edition e arquitetura medalhão"
+readme = "README.md"
+authors = [
+    { name = "Murilo Mandelli" },
+    { name = "Augusto Benedetti" },
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pandas>=2.2",
+    "pyodbc>=5.3.0",
+    "python-dotenv>=1.2.4",
+    "databricks-sdk>=0.153.0",
+    "jupyterlab>=4.6.4",
+    "ipykernel>=7.4.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "faker>=40.43.0",
+    "mkdocs-material>=9.7.7",
+    "pytest>=9.1.1",
+    "ruff>=0.17.1",
+    "taskipy>=1.14.1",
+    # Só para testar localmente os notebooks do Databricks (tests/simular_databricks.py)
+    "pyspark==3.5.9",
+    "delta-spark==3.3.3",
+]
+
+# Atalhos: uv run task <nome>
+[tool.taskipy.tasks]
+up = "docker compose up -d --wait"
+down = "docker compose down"
+dados = "python scripts/gerar_dados.py"
+extrair = "jupyter nbconvert --to notebook --execute --inplace notebooks/local/00_setup_sqlserver.ipynb notebooks/local/01_extracao_sqlserver_para_landing.ipynb"
+simular = "python tests/simular_databricks.py"
+lab = "jupyter lab --notebook-dir=notebooks"
+test = "pytest -v"
+lint = "ruff check . && ruff format --check ."
+format = "ruff check --fix . && ruff format ."
+docs = "mkdocs serve"
+deploy = "mkdocs gh-deploy --force"
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["notebooks", "docs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

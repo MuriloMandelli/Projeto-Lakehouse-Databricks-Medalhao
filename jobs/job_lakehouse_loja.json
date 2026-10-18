@@ -1,0 +1,42 @@
+{
+  "name": "lakehouse_loja_medalhao",
+  "description": "Trabalho 3 - Pipeline medalhao da Loja Virtual: preparar ambiente -> bronze -> silver -> gold",
+  "max_concurrent_runs": 1,
+  "tasks": [
+    {
+      "task_key": "t1_preparar_ambiente",
+      "description": "Cria os schemas landing, bronze, silver, gold e o volume landing.dados",
+      "notebook_task": {
+        "notebook_path": "/Workspace/Users/SEU_EMAIL/Projeto-Lakehouse-Databricks-Medalhao/notebooks/databricks/001_preparar_ambiente",
+        "source": "WORKSPACE"
+      }
+    },
+    {
+      "task_key": "t2_bronze",
+      "description": "CSV da landing -> tabelas Delta na bronze",
+      "depends_on": [{ "task_key": "t1_preparar_ambiente" }],
+      "notebook_task": {
+        "notebook_path": "/Workspace/Users/SEU_EMAIL/Projeto-Lakehouse-Databricks-Medalhao/notebooks/databricks/002_bronze",
+        "source": "WORKSPACE"
+      }
+    },
+    {
+      "task_key": "t3_silver",
+      "description": "Data Quality: bronze -> silver",
+      "depends_on": [{ "task_key": "t2_bronze" }],
+      "notebook_task": {
+        "notebook_path": "/Workspace/Users/SEU_EMAIL/Projeto-Lakehouse-Databricks-Medalhao/notebooks/databricks/003_silver",
+        "source": "WORKSPACE"
+      }
+    },
+    {
+      "task_key": "t4_gold",
+      "description": "Modelo dimensional (Kimball): silver -> gold",
+      "depends_on": [{ "task_key": "t3_silver" }],
+      "notebook_task": {
+        "notebook_path": "/Workspace/Users/SEU_EMAIL/Projeto-Lakehouse-Databricks-Medalhao/notebooks/databricks/004_gold",
+        "source": "WORKSPACE"
+      }
+    }
+  ]
+}

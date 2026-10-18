@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 650" width="1020" height="650" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">
+<rect width="1020" height="650" fill="#ffffff"/>
+<text x="510.0" y="28" text-anchor="middle" font-size="15" font-weight="600" fill="#1f2937">Camada GOLD — esquema estrela (Ralph Kimball)</text>
+<g fill="none" stroke="#475569" stroke-width="1.6">
+<path d="M395 140.0 H327.5 V116.0 H260"/>
+<path d="M625 164.0 H692.5 V116.0 H760"/>
+<path d="M510.0 306 V360"/>
+</g>
+<g font-size="12" font-weight="700" fill="#b45309">
+<text x="381" y="135.0">N</text><text x="264" y="111.0">1</text>
+<text x="629" y="159.0">N</text><text x="748" y="111.0">1</text>
+<text x="516.0" y="322">N</text><text x="516.0" y="354">1</text>
+</g>
+<g transform="translate(30,70)">
+<rect width="230" height="236" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/>
+<path d="M0 6 a6 6 0 0 1 6 -6 h218 a6 6 0 0 1 6 6 v28 h-230 z" fill="#1e3a8a"/>
+<text x="115.0" y="22" text-anchor="middle" fill="#fff" font-weight="700">dim_cliente</text>
+<text x="10" y="50" font-weight="700">PK SK_CLIENTE</text>
+<text x="220" y="50" text-anchor="end" fill="#64748b" font-size="11">BIGINT</text>
+<text x="10" y="74">CODIGO_CLIENTE</text>
+<text x="220" y="74" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="98">NOME</text>
+<text x="220" y="98" text-anchor="end" fill="#64748b" font-size="11">STRING</text>
+<text x="10" y="122">EMAIL</text>
+<text x="220" y="122" text-anchor="end" fill="#64748b" font-size="11">STRING</text>
+<text x="10" y="146">CPF</text>
+<text x="220" y="146" text-anchor="end" fill="#64748b" font-size="11">STRING</text>
+<text x="10" y="170">CIDADE</text>
+<text x="220" y="170" text-anchor="end" fill="#64748b" font-size="11">STRING</text>
+<text x="10" y="194">UNIDADE_FEDERATIVA</text>
+<text x="220" y="194" text-anchor="end" fill="#64748b" font-size="11">STRING</text>
+<text x="10" y="218">DATA_CADASTRO</text>
+<text x="220" y="218" text-anchor="end" fill="#64748b" font-size="11">DATE</text>
+</g>
+<g transform="translate(395,70)">
+<rect width="230" height="236" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/>
+<path d="M0 6 a6 6 0 0 1 6 -6 h218 a6 6 0 0 1 6 6 v28 h-230 z" fill="#b45309"/>
+<text x="115.0" y="22" text-anchor="middle" fill="#fff" font-weight="700">fato_vendas</text>
+<text x="10" y="50" fill="#b45309">FK FK_TEMPO</text>
+<text x="220" y="50" text-anchor="end" fill="#64748b" font-size="11">DATE</text>
+<text x="10" y="74" fill="#b45309">FK FK_CLIENTE</text>
+<text x="220" y="74" text-anchor="end" fill="#64748b" font-size="11">BIGINT</text>
+<text x="10" y="98" fill="#b45309">FK FK_PRODUTO</text>
+<text x="220" y="98" text-anchor="end" fill="#64748b" font-size="11">BIGINT</text>
+<text x="10" y="122" font-style="italic" fill="#475569">NUMERO_PEDIDO</text>
+<text x="220" y="122" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="146" font-style="italic" fill="#475569">STATUS_PEDIDO</text>
+<text x="220" y="146" text-anchor="end" fill="#64748b" font-size="11">STRING</text>
+<text x="10" y="170" fill="#065f46">QUANTIDADE</text>
+<text x="220" y="170" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="194" fill="#065f46">PRECO_UNITARIO</text>
+<text x="220" y="194" text-anchor="end" fill="#64748b" font-size="11">DECIMAL</text>
+<text x="10" y="218" fill="#065f46">VALOR_TOTAL</text>
+<text x="220" y="218" text-anchor="end" fill="#64748b" font-size="11">DECIMAL</text>
+</g>
+<g transform="translate(760,70)">
+<rect width="230" height="212" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/>
+<path d="M0 6 a6 6 0 0 1 6 -6 h218 a6 6 0 0 1 6 6 v28 h-230 z" fill="#1e3a8a"/>
+<text x="115.0" y="22" text-anchor="middle" fill="#fff" font-weight="700">dim_produto</text>
+<text x="10" y="50" font-weight="700">PK SK_PRODUTO</text>
+<text x="220" y="50" text-anchor="end" fill="#64748b" font-size="11">BIGINT</text>
+<text x="10" y="74">CODIGO_PRODUTO</text>
+<text x="220" y="74" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="98">NOME_PRODUTO</text>
+<text x="220" y="98" text-anchor="end" fill="#64748b" font-size="11">STRING</text>
+<text x="10" y="122">CATEGORIA</text>
+<text x="220" y="122" text-anchor="end" fill="#64748b" font-size="11">STRING</text>
+<text x="10" y="146">DESCRICAO_CATEGORIA</text>
+<text x="220" y="146" text-anchor="end" fill="#64748b" font-size="11">STRING</text>
+<text x="10" y="170">PRECO_ATUAL</text>
+<text x="220" y="170" text-anchor="end" fill="#64748b" font-size="11">DECIMAL</text>
+<text x="10" y="194">ATIVO</text>
+<text x="220" y="194" text-anchor="end" fill="#64748b" font-size="11">BOOLEAN</text>
+</g>
+<g transform="translate(395,360)">
+<rect width="230" height="236" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/>
+<path d="M0 6 a6 6 0 0 1 6 -6 h218 a6 6 0 0 1 6 6 v28 h-230 z" fill="#1e3a8a"/>
+<text x="115.0" y="22" text-anchor="middle" fill="#fff" font-weight="700">dim_tempo</text>
+<text x="10" y="50" font-weight="700">PK DATA</text>
+<text x="220" y="50" text-anchor="end" fill="#64748b" font-size="11">DATE</text>
+<text x="10" y="74">ANO</text>
+<text x="220" y="74" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="98">TRIMESTRE</text>
+<text x="220" y="98" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="122">MES</text>
+<text x="220" y="122" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="146">NOME_MES</text>
+<text x="220" y="146" text-anchor="end" fill="#64748b" font-size="11">STRING</text>
+<text x="10" y="170">DIA</text>
+<text x="220" y="170" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+<text x="10" y="194">NOME_DIA_SEMANA</text>
+<text x="220" y="194" text-anchor="end" fill="#64748b" font-size="11">STRING</text>
+<text x="10" y="218">NUMERO_DIA_SEMANA</text>
+<text x="220" y="218" text-anchor="end" fill="#64748b" font-size="11">INT</text>
+</g>
+<text x="30" y="610" font-size="12" fill="#475569">Grão do fato: um item vendido. Itálico = dimensão degenerada (fica no fato). Verde = medidas.</text>
+<text x="30" y="630" font-size="12" fill="#475569">A categoria do produto foi desnormalizada dentro de dim_produto (estrela, não floco de neve).</text>
+</svg>
