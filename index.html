@@ -668,16 +668,7 @@ uma <strong>Job</strong>.</p>
 <p>O cenário é o mesmo do Trabalho 2: uma <strong>loja virtual</strong> com 5 tabelas (categoria, cliente, produto,
 pedido e item_pedido).</p>
 <h2 id="o-pipeline">O pipeline<a class="headerlink" href="#o-pipeline" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart LR
-    subgraph PC["Computador (WSL)"]
-        DB[("SQL Server&lt;br/&gt;LojaDB")] --&gt;|01 · extração| CSV["data/landing/*.csv"]
-    end
-    CSV --&gt;|upload SDK / UI| LAND
-    subgraph DBX["Databricks Free Edition — catálogo workspace"]
-        LAND[["landing.dados&lt;br/&gt;(volume, CSV)"]] --&gt;|002| BR[("bronze&lt;br/&gt;Delta")]
-        BR --&gt;|003 Data Quality| SI[("silver&lt;br/&gt;Delta")]
-        SI --&gt;|004 Kimball| GO[("gold&lt;br/&gt;estrela")]
-    end</code></pre>
+<p><img alt="Pipeline da Loja Virtual na arquitetura medalhão" src="assets/pipeline_medalhao.svg" /></p>
 <table>
 <thead>
 <tr>

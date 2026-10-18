@@ -644,10 +644,7 @@ melhoram a <strong>estrutura e a qualidade</strong> dos dados progressivamente (
 </tr>
 </tbody>
 </table>
-<pre class="mermaid"><code>flowchart LR
-    L["LANDING&lt;br/&gt;bruto · provisório"] --&gt; B["BRONZE&lt;br/&gt;cópia · histórico · Delta"]
-    B --&gt; S["SILVER&lt;br/&gt;limpo · padronizado · Delta"]
-    S --&gt; G["GOLD&lt;br/&gt;negócio · dimensional · Delta"]</code></pre>
+<p><img alt="Camadas da arquitetura medalhão" src="../assets/camadas_medalhao.svg" /></p>
 <h2 id="os-objetos-no-databricks">Os objetos no Databricks<a class="headerlink" href="#os-objetos-no-databricks" title="Permanent link">&para;</a></h2>
 <p>O Databricks Free Edition usa o <strong>Unity Catalog</strong>, que organiza tudo em três níveis:
 <strong>catálogo → schema → tabela/volume</strong>.</p>

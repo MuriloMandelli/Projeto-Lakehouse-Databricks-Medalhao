@@ -484,6 +484,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Execução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#como-criar-no-databricks" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -556,6 +567,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Execução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#como-criar-no-databricks" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -586,8 +608,7 @@
 <h1 id="job-encadeamento-das-etapas">Job: encadeamento das etapas<a class="headerlink" href="#job-encadeamento-das-etapas" title="Permanent link">&para;</a></h1>
 <p>O enunciado pede que todas as execuções estejam encadeadas por uma <strong>Job</strong> (<em>Jobs &amp; Pipelines</em>), com
 cada etapa executada <strong>em sequência</strong>.</p>
-<pre class="mermaid"><code>flowchart LR
-    T1["t1_preparar_ambiente&lt;br/&gt;001"] --&gt; T2["t2_bronze&lt;br/&gt;002"] --&gt; T3["t3_silver&lt;br/&gt;003"] --&gt; T4["t4_gold&lt;br/&gt;004"]</code></pre>
+<p><img alt="Tarefas da Job no Databricks" src="../assets/job_tarefas.png" /></p>
 <table>
 <thead>
 <tr>
@@ -626,6 +647,10 @@ cada etapa executada <strong>em sequência</strong>.</p>
 </table>
 <p>Se uma tarefa falhar, as seguintes <strong>não executam</strong> — a gold nunca é montada com dados
 incompletos.</p>
+<h2 id="execucao">Execução<a class="headerlink" href="#execucao" title="Permanent link">&para;</a></h2>
+<p>A Job foi executada no Databricks Free Edition e terminou com <strong>Succeeded</strong> em <strong>3 min 42 s</strong>,
+com as 4 tarefas em verde:</p>
+<p><img alt="Execução da Job concluída com sucesso" src="../assets/job_execucao_sucesso.png" /></p>
 <h2 id="como-criar-no-databricks">Como criar no Databricks<a class="headerlink" href="#como-criar-no-databricks" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Jobs &amp; Pipelines ▸ Create ▸ Job</strong>, nome <code>lakehouse_loja_medalhao</code>.</li>
